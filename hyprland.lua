@@ -2,7 +2,7 @@
 --## MAIN CONFIGURATION ###
 --#########################
 
-local config_dir = os.getenv("HOME") .. "/.config/hypr/hypr-ic/"
+local config_dir = os.getenv("HOME") .. "/.config/hypr/"
 
 -- Import modules
 dofile(config_dir .. "looknfeel.lua")
