@@ -21,15 +21,15 @@ hl.config({
             border_color_hover = colors.color5,
             border_color_focus = colors.color4,
         },
-        dynamic_cursors = {
-            enabled = true,
-            mode = "stretch",
-            threshold = 2,
-            stretch = {
-                limit = 300,
-                activation = "quadratic",
-                window = 100,
-            },
-        }
+        -- dynamic_cursors = {
+        --     enabled = true,
+        --     mode = "stretch",
+        --     threshold = 2,
+        --     stretch = {
+        --         limit = 300,
+        --         activation = "quadratic",
+        --         window = 100,
+        --     },
+        -- }
     }
 })

@@ -48,10 +48,10 @@ hl.config({
     },
     general = {
         gaps_in = 5,
-        gaps_out = 15,
+        gaps_out = 10,
         border_size = 3,
         col = {
-            active_border = colors.color4,
+            active_border = { colors = { colors.color1, colors.color2, colors.color3, colors.color4, colors.color5, colors.color6 }, angle = 0 },
             inactive_border = colors.background,
         },
         resize_on_border = false,
@@ -60,7 +60,7 @@ hl.config({
     },
     decoration = {
         rounding = 4,
-        rounding_power = 5,
+        rounding_power = 10,
         active_opacity = 0.90,
         inactive_opacity = 0.6,
         shadow = {
