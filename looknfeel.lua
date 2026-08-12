@@ -3,24 +3,7 @@
 --####################
 
 local home = os.getenv("HOME")
-local colors = dofile(home .. "/.cache/wal/colors-hyprland.lua")
-
--- MONITORS
-hl.monitor({
-    output = "eDP-1",
-    mode = "highres@highrr",
-    position = "0x0",
-    scale = "1",
-    bitdepth = 10,
-})
-
-hl.monitor({
-    output = "",
-    mode = "preferred",
-    position = "auto",
-    scale = "1",
-    mirror = "eDP-1",
-})
+local colors = require(home .. "/.cache/wal/colors-hyprland")
 
 -- ENVIRONMENT VARIABLES
 hl.env("XCURSOR_SIZE", "24")
