@@ -5,7 +5,7 @@
 
 local terminal = "kitty"
 local editor = "kitty nvim"
-local tusic = "urxvt -e /home/impossibleclone/go/bin/tusic"
+local tusic = "kitty tusic"
 local menu = "rofi -show drun"
 local mainMod = "SUPER"
 
@@ -18,7 +18,7 @@ hl.bind(mainMod .. " + Escape", hl.dsp.exec_cmd("killall Hyprland"))
 hl.bind(mainMod .. " + N", hl.dsp.exec_cmd(editor))
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
 hl.bind(mainMod .. " + G", hl.dsp.exec_cmd("[workspace 2] zen-browser"))
-hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd("killall -q waybar;waybar"))
+hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd("killall quickshell;quickshell"))
 hl.bind(mainMod .. " + F", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + F", hl.dsp.window.resize({ x = 945, y = 501 }))
 hl.bind(mainMod .. " + F", hl.dsp.window.center())
@@ -26,9 +26,9 @@ hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + I", hl.dsp.layout("swapwithmaster master"))
 hl.bind(mainMod .. " + X", hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" }))
 hl.bind(mainMod .. " + X", hl.dsp.window.fullscreen_state({ internal = -1, client = 2 }))
-hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -m output -o ~/pics/ss"))
+hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -m output --clipboard-only"))
 hl.bind("ALT + PRINT", hl.dsp.exec_cmd("hyprshot -m window -o ~/pics/ss"))
-hl.bind(mainMod .. " + SHIFT + C", hl.dsp.exec_cmd("hyprshot -m region -o ~/pics/ss"))
+hl.bind("SHIFT + PRINT", hl.dsp.exec_cmd("hyprshot -m region -o ~/pics/ss"))
 hl.bind(mainMod .. " + P", hl.dsp.exec_cmd("hyprpicker -a"))
 hl.bind(mainMod .. " + SHIFT + K",
     hl.dsp.exec_cmd(

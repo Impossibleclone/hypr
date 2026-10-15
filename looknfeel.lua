@@ -30,9 +30,9 @@ hl.config({
         },
     },
     general = {
-        gaps_in = 5,
-        gaps_out = 10,
-        border_size = 3,
+        gaps_in = 1,
+        gaps_out = 0,
+        border_size = 2,
         col = {
             active_border = { colors = { colors.color1, colors.color2, colors.color3, colors.color4, colors.color5, colors.color6 }, angle = 0 },
             inactive_border = colors.background,
@@ -42,8 +42,8 @@ hl.config({
         layout = "master",
     },
     decoration = {
-        rounding = 4,
-        rounding_power = 10,
+        rounding = 20,
+        rounding_power = 3,
         active_opacity = 0.90,
         inactive_opacity = 0.6,
         shadow = {
